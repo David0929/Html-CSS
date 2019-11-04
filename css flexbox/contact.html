@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Flexbox</title>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="style.css" rel="stylesheet">
+    
+	</head>	
+	<body class="holy-grail">
+		<header>
+			<a href="index.html" style="text-decoration:none;"><h1 style="margin:.1em;">funwflexbox.com</h1></a>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="tweets.html">Tweets</a></li>
+				<li><a  class="active"  href="contact.html">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="holy-grail-body">
+			<div class="holy-grail-content">
+				<main>
+					<article>
+                        <h2>Contact</h2>
+                            
+                        <p>Please feel free to contact us using one of the methods below!Thank you!</p> 
+                            
+                        <p><b>Phone: </b>555-555-5555</p>
+                        <p><b>Address: </b>1212 First St. New Jersy, NJ 23456</p>
+                            
+                        <p>Alternatively, you can send us a message! </p>  
+
+
+                        <div id="contactFrmDiv">
+                            <form method="POST" action="process.php" id="contact_frm">
+                                <label for="user_name">Name:</label>
+                                <input type="text" name="user_name" id="user_name">
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email">
+                                <label for="content">Email:</label>
+                                <textarea rows="10" name="body" id="content"></textarea>
+                                <input type="submit" value="send" name="submit"/>
+                            </form>
+                        </div>
+                    </article>
+									
+					<aside>
+						<div id="disqus_thread"></div>
+						<script>
+						/**
+						*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+						*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+						/*
+						var disqus_config = function () {
+						this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+						this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+						};
+						*/
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://flexbox-1.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+					</aside>
+
+				</main>
+			</div>
+
+			<div class="holy-grail-sidebar-1 hg-sidebar">
+						<img src="1.jpg" alt="flower" >
+						<img src="2.jpg" alt="flower" >
+						<img src="3.jpg" alt="flower" >
+						<img src="4.jpg" alt="flower" >
+			</div>
+
+		</div>
+
+		<footer>
+			<p>Made by <a href="https://twitter.com/@terryqthompson" target="_blank">TERRY THOMPSON</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+		</footer>
+	</body>
+</html>
